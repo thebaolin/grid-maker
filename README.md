@@ -2,7 +2,7 @@
 Baolin (Paulina) Chang, Ivy Zheng
 
 ### Live Link
-[Website link]([https://thebaolin.github.io/grid-maker/])
+[Website link](https://thebaolin.github.io/grid-maker/)
 
 ----------
 ### 1. Use the following process to ***import*** the Assignment 2 starter code repository to your GitHub account as the starter codebase
