@@ -65,7 +65,14 @@ function selectColor(){
     colorSelected = document.getElementById("selectedColorId").value;
     console.log(colorSelected);
 }
+// Color a single cell upon click
+function colorCell(cell) {
+    colorSelected = document.getElementById("selectedColorId").value;
 
+    if (colorSelected !== "SELECT") {
+        cell.style.backgroundColor = colorSelected;
+    }
+}
 // Fill all uncolored cells
 function fillU(){
     alert("Clicked Fill All Uncolored"); // Replace this line with your code.
