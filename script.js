@@ -90,7 +90,14 @@ function fillU(){
 
 // Fill all cells
 function fillAll(){
-    alert("Clicked Fill All"); // Replace this line with your code.
+    const rows = document.getElementById("grid").getElementsByTagName("tr");
+    for (let i = 0; i < numRows; i++) {
+        const cells = rows[i].getElementsByTagName("td");
+
+        for (let j = 0; j < numCols; j++) {
+            cells[j].style.backgroundColor = colorSelected; 
+        }
+    }
 }
 
 // Clear all cells
