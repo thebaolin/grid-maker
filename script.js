@@ -75,7 +75,17 @@ function colorCell(cell) {
 }
 // Fill all uncolored cells
 function fillU(){
-    alert("Clicked Fill All Uncolored"); // Replace this line with your code.
+    const rows = document.getElementById("grid").getElementsByTagName("tr");
+
+    for (let i = 0; i < numRows; i++) {
+        const cells = rows[i].getElementsByTagName("td");
+
+        for (let j = 0; j < numCols; j++) {
+            if (cells[j].style.backgroundColor === "") { // Check if cell is uncolored
+                cells[j].style.backgroundColor = colorSelected; // Set cell to color if uncolored
+            }
+        }
+    }
 }
 
 // Fill all cells
