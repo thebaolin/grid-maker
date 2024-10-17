@@ -5,7 +5,23 @@ let colorSelected;
 
 // Add a row
 function addR() {
-    alert("Clicked Add Row"); // Replace this line with your code.
+
+    const table = document.getElementById("grid");
+    const row = document.createElement("tr");
+
+    if (numCols === 0) {
+        numCols = 1; // Set default column count to 1
+    }
+    
+    // Add cells equal to the current number of columns
+    for (let i = 0; i < numCols; i++) {
+        const cell = document.createElement("td");
+        cell.onclick = function() { colorCell(this); };
+        row.appendChild(cell);
+    }
+    
+    table.appendChild(row);
+    numRows++;
 }
 
 // Add a column
