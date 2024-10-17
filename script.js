@@ -26,7 +26,16 @@ function addR() {
 
 // Add a column
 function addC() {
-    alert("Clicked Add Col"); // Replace this line with your code.
+    const rows = document.getElementById("grid").getElementsByTagName("tr");
+
+    // Add a new cell to each row
+    for (let i = 0; i < numRows; i++) {
+        const cell = document.createElement("td");
+        cell.onclick = function() { colorCell(this); };
+        rows[i].appendChild(cell);
+    }
+
+    numCols++;
 }
 
 // Remove a row
