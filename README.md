@@ -1,8 +1,8 @@
-# grid-maker-starter-code
-This repository is the starter code for Assignment 2 - Grid Maker.
+# grid-maker
+Baolin (Paulina) Chang, Ivy Zheng
 
 ### Live Link
-[Website link](https://johnnylaicode.github.io/grid-maker-starter-code/)
+[Website link]([https://johnnylaicode.github.io/grid-maker-starter-code/](https://thebaolin.github.io/grid-maker/))
 
 ----------
 ### 1. Use the following process to ***import*** the Assignment 2 starter code repository to your GitHub account as the starter codebase
