@@ -81,7 +81,7 @@ function fillU(){
         const cells = rows[i].getElementsByTagName("td");
 
         for (let j = 0; j < numCols; j++) {
-            if (cells[j].style.backgroundColor === "" | cells[j].style.backgroundColor == "White") { // Check if cell is uncolored
+            if (cells[j].style.backgroundColor === "" | cells[j].style.backgroundColor === "White") { // Check if cell is uncolored
                 cells[j].style.backgroundColor = colorSelected; // Set cell to color if uncolored
             }
         }
