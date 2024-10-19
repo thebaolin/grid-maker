@@ -76,13 +76,15 @@ function colorCell(cell) {
 // Fill all uncolored cells
 function fillU(){
     const rows = document.getElementById("grid").getElementsByTagName("tr");
+    colorSelected = document.getElementById("selectedColorId").value;
 
     for (let i = 0; i < numRows; i++) {
         const cells = rows[i].getElementsByTagName("td");
 
         for (let j = 0; j < numCols; j++) {
-            if (cells[j].style.backgroundColor === "" | cells[j].style.backgroundColor === "White") { // Check if cell is uncolored
+            if (cells[j].style.backgroundColor === "" || cells[j].style.backgroundColor === "white") { // Check if cell is uncolored
                 cells[j].style.backgroundColor = colorSelected; // Set cell to color if uncolored
+                console.log(colorSelected);
             }
         }
     }
